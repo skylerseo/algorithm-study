@@ -210,7 +210,23 @@ remainder(5, 8, 4);
 181720*/
 
 
+function mul(a, b){
+  // const b1 = b % 10;
+  // const b2 = (b%100) / 10;
+  // const b3 = b / 100;
 
+  const first = a * (b % 10);
+  const second = a * Math.floor((b % 100) / 10);
+  const third = a * Math.floor(b / 100);
+  const fourth = a * b;
+
+  const result = [first, second, third, fourth];
+
+  return result.forEach(result => {
+    console.log(result);
+  });
+}
+mul(472, 385);
 
 // -------------------------------------
 </script>
