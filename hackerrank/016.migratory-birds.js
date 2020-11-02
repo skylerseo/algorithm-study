@@ -1,3 +1,12 @@
+/* - Function Description
+
+Complete the migratoryBirds function in the editor below. It should return the lowest type number of the most frequently sighted bird.
+
+migratoryBirds has the following parameter(s):
+
+arr: an array of integers representing types of birds sighted */
+
+
 function migratoryBirds(arr) {
   let map = {}, maxCount = 0, output = [];
   for (let i = 0; i < arr.length; i++) {
